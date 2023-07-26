@@ -30,6 +30,7 @@ HRB is an app do discover rails-react integration in separate apps.
   <summary>Client</summary>
   <ul>
     <li>HTML(erb), CSS</li>
+    <li><a href='https://github.com/maov19/hello-react-frontend'>Front end Repo</a></li>
   </ul>
 </details>
 
