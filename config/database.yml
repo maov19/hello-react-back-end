@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: hello-rails-backend-development
+  username: postgres
+  password: martin*1990
+
+test:
+  <<: *default
+  database: hello-rails-backend-test
+  username: postgres
+  password: martin*1990
+
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: hello-rails-backend-production
+  username: postgres
+  password: martin*1990
